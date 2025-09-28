@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamerName - Egirl Streamer</title>
+    <meta name="description" content="Welcome to StreamerName's official website - Gaming, streaming, and vibes!">
+    
+    <!-- Content Security Policy for local development -->
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' http://localhost:* https://localhost:* http://192.168.68.61:* https://192.168.68.61:*; frame-src 'self' https://player.twitch.tv https://*.twitch.tv; child-src 'self' https://player.twitch.tv https://*.twitch.tv;">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>StreamerName</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#stream" class="nav-link">Stream</a>
+                <a href="#clips" class="nav-link">Clips</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#" class="nav-link admin-link" id="admin-link">Admin</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Hey Gamers!</span>
+                    <br>I'm StreamerName
+                </h1>
+                <p class="hero-subtitle">Your favorite egirl streamer bringing you the best gaming content, cozy vibes, and epic moments!</p>
+                <div class="hero-buttons">
+                    <a href="https://twitch.tv/kvrtez" class="btn btn-primary" target="_blank" rel="noopener">
+                        <i class="fab fa-twitch"></i>
+                        Watch Live
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-heart"></i>
+                        Get to Know Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                    <p>Profile Image</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ad Space - Top Banner -->
+        <div class="ad-space ad-banner-top">
+            <div class="ad-placeholder">
+                <i class="fas fa-ad"></i>
+                <span>Advertisement Space - 728x90</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to my world! 💜</h3>
+                    <p>I'm a passionate gamer and content creator who loves connecting with amazing people like you! When I'm not streaming, you can find me exploring new games, creating content, or just vibing with my community.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h4>500K+</h4>
+                            <p>Followers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>2M+</h4>
+                            <p>Views</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>3+</h4>
+                            <p>Years Streaming</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://twitch.tv/kvrtez" class="social-link twitch" title="Follow on Twitch" target="_blank" rel="noopener">
+                            <i class="fab fa-twitch"></i>
+                        </a>
+                        <a href="https://twitter.com/username" class="social-link twitter" title="Follow on Twitter" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/username" class="social-link instagram" title="Follow on Instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.gg/server" class="social-link discord" title="Join Discord Server" target="_blank" rel="noopener">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://youtube.com/@username" class="social-link youtube" title="Subscribe on YouTube" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com/@username" class="social-link tiktok" title="Follow on TikTok" target="_blank" rel="noopener">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ad Space - Sidebar -->
+                <div class="ad-space ad-sidebar">
+                    <div class="ad-placeholder">
+                        <i class="fas fa-ad"></i>
+                        <span>Advertisement<br>300x250</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stream Section -->
+    <section id="stream" class="stream">
+        <div class="container">
+            <h2 class="section-title">Live Stream</h2>
+            <div class="stream-content">
+                <div class="stream-embed">
+                    <iframe
+                        src="https://player.twitch.tv/?channel=kvrtez&parent=placeholder"
+                        height="480"
+                        width="854"
+                        allowfullscreen
+                        title="Twitch Live Stream Player">
+                    </iframe>
+                </div>
+                <div class="stream-info">
+                    <div class="stream-status">
+                        <div class="status-indicator offline"></div>
+                        <span>Currently Offline</span>
+                    </div>
+                    <h3>Next Stream</h3>
+                    <p>Join me for some epic gaming sessions! Check my schedule below:</p>
+                    
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <span class="day">Monday</span>
+                            <span class="time">7:00 PM - 11:00 PM EST</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="day">Wednesday</span>
+                            <span class="time">7:00 PM - 11:00 PM EST</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="day">Friday</span>
+                            <span class="time">8:00 PM - 12:00 AM EST</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">2:00 PM - 6:00 PM EST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clips Section -->
+    <section id="clips" class="clips">
+        <div class="container">
+            <h2 class="section-title">Latest Clips</h2>
+            <div class="clips-grid">
+                <div class="clip-item">
+                    <iframe
+                        src="https://clips.twitch.tv/embed?clip=AwkwardHelplessSalamanderSwiftRage&parent=placeholder"
+                        height="360"
+                        width="640"
+                        allowfullscreen
+                        title="Twitch Clip - Amazing Skill Level">
+                    </iframe>
+                    <div class="clip-info">
+                        <h3>Amazing Skill Level</h3>
+                        <p>Watch this epic gameplay moment!</p>
+                    </div>
+                </div>
+                <div class="clip-item">
+                    <iframe
+                        src="https://clips.twitch.tv/embed?clip=BetterNaiveMarrowWow&parent=placeholder"
+                        height="360"
+                        width="640"
+                        allowfullscreen
+                        title="Twitch Clip - Epic Moment">
+                    </iframe>
+                    <div class="clip-info">
+                        <h3>Epic Moment</h3>
+                        <p>Check out this incredible play!</p>
+                    </div>
+                </div>
+                <div class="clip-item">
+                    <iframe
+                        src="https://clips.twitch.tv/embed?clip=TameIntelligentSamosaArgieB8&parent=placeholder"
+                        height="360"
+                        width="640"
+                        allowfullscreen
+                        title="Twitch Clip - Funny Fail">
+                    </iframe>
+                    <div class="clip-info">
+                        <h3>Funny Fail</h3>
+                        <p>Hilarious moments from stream!</p>
+                    </div>
+                </div>
+                <div class="clip-item">
+                    <iframe
+                        src="https://clips.twitch.tv/embed?clip=BoredHelplessBorkTwitchRaid&parent=placeholder"
+                        height="360"
+                        width="640"
+                        allowfullscreen
+                        title="Twitch Clip - Best Play">
+                    </iframe>
+                    <div class="clip-info">
+                        <h3>Best Play</h3>
+                        <p>Watch the most amazing plays!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clips-footer">
+                <a href="https://twitch.tv/kvrtez/clips" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <i class="fab fa-twitch"></i>
+                    View All Clips
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Gaming Screenshot</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Stream Highlight</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Behind the Scenes</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Fan Art</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Setup Tour</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Community Event</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect!</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Want to collaborate, have business inquiries, or just want to say hi? I'd love to hear from you!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>business@streamername.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-discord"></i>
+                            <span>Join my Discord Server</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ad Space - Bottom -->
+                <div class="ad-space ad-bottom">
+                    <div class="ad-placeholder">
+                        <i class="fas fa-ad"></i>
+                        <span>Advertisement Space - 300x250</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StreamerName</h3>
+                    <p>Your favorite egirl streamer bringing you epic gaming content!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#stream">Stream</a></li>
+                        <li><a href="#clips">Clips</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-social">
+                        <a href="https://twitch.tv/kvrtez" title="Follow on Twitch" target="_blank" rel="noopener"><i class="fab fa-twitch"></i></a>
+                        <a href="https://twitter.com/username" title="Follow on Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/username" title="Follow on Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/server" title="Join Discord Server" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
+                        <a href="https://youtube.com/@username" title="Subscribe on YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@username" title="Follow on TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StreamerName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Customizer -->
+    <div class="theme-customizer" id="theme-customizer">
+        <div class="customizer-toggle" id="customizer-toggle">
+            <i class="fas fa-palette"></i>
+        </div>
+        <div class="customizer-panel">
+            <h3>Customize Theme</h3>
+            <div class="color-options">
+                <h4>Primary Color</h4>
+                <div class="color-picker">
+                    <label for="primary-color" class="sr-only">Primary Color</label>
+                    <input type="color" id="primary-color" value="#ff6b9d">
+                </div>
+                <h4>Secondary Color</h4>
+                <div class="color-picker">
+                    <label for="secondary-color" class="sr-only">Secondary Color</label>
+                    <input type="color" id="secondary-color" value="#a855f7">
+                </div>
+                <h4>Accent Color</h4>
+                <div class="color-picker">
+                    <label for="accent-color" class="sr-only">Accent Color</label>
+                    <input type="color" id="accent-color" value="#06d6a0">
+                </div>
+            </div>
+            <button class="btn btn-primary" id="reset-theme">Reset to Default</button>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div class="modal-overlay" id="admin-modal-overlay">
+        <div class="modal-content admin-modal">
+            <div class="modal-header">
+                <h3>Admin Login</h3>
+                <button class="modal-close" id="admin-modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="admin-login-form">
+                    <div class="form-group">
+                        <label for="admin-username">Username:</label>
+                        <input type="text" id="admin-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-password">Password:</label>
+                        <input type="password" id="admin-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <div class="admin-info">
+                    <p><small>Default credentials: admin / admin123</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="admin-panel">
+        <div class="admin-header">
+            <h2>Site Management Panel</h2>
+            <div class="admin-controls">
+                <button class="btn btn-secondary" id="admin-logout">Logout</button>
+                <button class="admin-close" id="admin-panel-close">&times;</button>
+            </div>
+        </div>
+        
+        <div class="admin-content">
+            <!-- Admin Navigation Tabs -->
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="site-info">Site Info</button>
+                <button class="admin-tab" data-tab="hero">Hero Section</button>
+                <button class="admin-tab" data-tab="about">About</button>
+                <button class="admin-tab" data-tab="schedule">Schedule</button>
+                <button class="admin-tab" data-tab="clips">Clips</button>
+                <button class="admin-tab" data-tab="contact">Contact</button>
+            </div>
+
+            <!-- Site Info Tab -->
+            <div class="admin-tab-content active" id="site-info-tab">
+                <div class="admin-section">
+                    <h3>Site Information</h3>
+                    <form id="site-info-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="site-title">Site Title:</label>
+                                <input type="text" id="site-title" placeholder="StreamerName - Egirl Streamer">
+                            </div>
+                            <div class="form-group">
+                                <label for="site-description">Site Description:</label>
+                                <input type="text" id="site-description" placeholder="Welcome to StreamerName's official website">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="streamer-name">Streamer Name:</label>
+                                <input type="text" id="streamer-name" placeholder="StreamerName">
+                            </div>
+                            <div class="form-group">
+                                <label for="twitch-channel">Twitch Channel:</label>
+                                <input type="text" id="twitch-channel" placeholder="kvrtez">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Site Info</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Hero Section Tab -->
+            <div class="admin-tab-content" id="hero-tab">
+                <div class="admin-section">
+                    <h3>Hero Section</h3>
+                    <form id="hero-form">
+                        <div class="form-group">
+                            <label for="hero-greeting">Greeting Text:</label>
+                            <input type="text" id="hero-greeting" placeholder="Hey Gamers!">
+                        </div>
+                        <div class="form-group">
+                            <label for="hero-name">Display Name:</label>
+                            <input type="text" id="hero-name" placeholder="I'm StreamerName">
+                        </div>
+                        <div class="form-group">
+                            <label for="hero-subtitle">Subtitle:</label>
+                            <textarea id="hero-subtitle" rows="3" placeholder="Your favorite egirl streamer bringing you the best gaming content, cozy vibes, and epic moments!"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="hero-button1-text">Button 1 Text:</label>
+                                <input type="text" id="hero-button1-text" placeholder="Watch Live">
+                            </div>
+                            <div class="form-group">
+                                <label for="hero-button1-url">Button 1 URL:</label>
+                                <input type="url" id="hero-button1-url" placeholder="https://twitch.tv/kvrtez">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="hero-button2-text">Button 2 Text:</label>
+                                <input type="text" id="hero-button2-text" placeholder="Get to Know Me">
+                            </div>
+                            <div class="form-group">
+                                <label for="hero-image-url">Profile Image URL:</label>
+                                <input type="url" id="hero-image-url" placeholder="https://example.com/profile.jpg">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Hero Section</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- About Section Tab -->
+            <div class="admin-tab-content" id="about-tab">
+                <div class="admin-section">
+                    <h3>About Section</h3>
+                    <form id="about-form">
+                        <div class="form-group">
+                            <label for="about-title">About Title:</label>
+                            <input type="text" id="about-title" placeholder="Welcome to my world! 💜">
+                        </div>
+                        <div class="form-group">
+                            <label for="about-bio">Bio:</label>
+                            <textarea id="about-bio" rows="4" placeholder="I'm a passionate gamer and content creator who loves connecting with amazing people like you!"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="stat-followers">Followers:</label>
+                                <input type="text" id="stat-followers" placeholder="500K+">
+                            </div>
+                            <div class="form-group">
+                                <label for="stat-views">Views:</label>
+                                <input type="text" id="stat-views" placeholder="2M+">
+                            </div>
+                            <div class="form-group">
+                                <label for="stat-years">Years Streaming:</label>
+                                <input type="text" id="stat-years" placeholder="3+">
+                            </div>
+                        </div>
+                        <h4>Social Links</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="social-twitch">Twitch URL:</label>
+                                <input type="url" id="social-twitch" placeholder="https://twitch.tv/kvrtez">
+                            </div>
+                            <div class="form-group">
+                                <label for="social-twitter">Twitter URL:</label>
+                                <input type="url" id="social-twitter" placeholder="https://twitter.com/username">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="social-instagram">Instagram URL:</label>
+                                <input type="url" id="social-instagram" placeholder="https://instagram.com/username">
+                            </div>
+                            <div class="form-group">
+                                <label for="social-discord">Discord URL:</label>
+                                <input type="url" id="social-discord" placeholder="https://discord.gg/server">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="social-youtube">YouTube URL:</label>
+                                <input type="url" id="social-youtube" placeholder="https://youtube.com/@username">
+                            </div>
+                            <div class="form-group">
+                                <label for="social-tiktok">TikTok URL:</label>
+                                <input type="url" id="social-tiktok" placeholder="https://tiktok.com/@username">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save About Section</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Schedule Tab -->
+            <div class="admin-tab-content" id="schedule-tab">
+                <div class="admin-section">
+                    <h3>Stream Schedule</h3>
+                    <form id="schedule-form">
+                        <div id="schedule-items">
+                            <!-- Schedule items will be populated here -->
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="add-schedule-item">Add Schedule Item</button>
+                        <button type="submit" class="btn btn-primary">Save Schedule</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Clips Tab -->
+            <div class="admin-tab-content" id="clips-tab">
+                <!-- Add New Clip Section -->
+                <div class="admin-section">
+                    <h3>Add New Clip</h3>
+                    <form id="add-clip-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clip-url">Twitch Clip URL:</label>
+                                <input type="url" id="clip-url" placeholder="https://clips.twitch.tv/YourClipSlug" required>
+                                <small>Paste the full Twitch clip URL here</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clip-title">Clip Title:</label>
+                                <input type="text" id="clip-title" placeholder="Amazing Play!" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clip-description">Description:</label>
+                                <input type="text" id="clip-description" placeholder="Check out this incredible moment!">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Clip</button>
+                    </form>
+                </div>
+
+                <!-- Current Clips Section -->
+                <div class="admin-section">
+                    <h3>Current Clips</h3>
+                    <div class="clips-list" id="admin-clips-list">
+                        <!-- Clips will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Tab -->
+            <div class="admin-tab-content" id="contact-tab">
+                <div class="admin-section">
+                    <h3>Contact Information</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-title">Contact Title:</label>
+                            <input type="text" id="contact-title" placeholder="Let's Connect!">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subtitle">Contact Subtitle:</label>
+                            <input type="text" id="contact-subtitle" placeholder="Get in Touch">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-description">Contact Description:</label>
+                            <textarea id="contact-description" rows="3" placeholder="Want to collaborate, have business inquiries, or just want to say hi? I'd love to hear from you!"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-email">Business Email:</label>
+                                <input type="email" id="contact-email" placeholder="business@streamername.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-discord-text">Discord Text:</label>
+                                <input type="text" id="contact-discord-text" placeholder="Join my Discord Server">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Contact Info</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
